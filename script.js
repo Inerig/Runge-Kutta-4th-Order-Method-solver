@@ -129,6 +129,3 @@ function adjustWidth(input) {
     const newWidth = Math.min(maxWidth, minWidth + charCount * stepSize);
     input.style.width = `${newWidth}px`;
 }
-    const newWidth = Math.min(maxWidth, minWidth + charCount * stepSize);
-    input.style.width = `${newWidth}px`;
-}
