@@ -31,7 +31,7 @@ body {
 
 .form-group label {
     margin-right: 10px;
-    width: 150px; /* Fixed width for labels */
+    width: 150px; 
     text-align: right;
 }
 
@@ -45,8 +45,8 @@ body {
     margin-left: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    min-width: 100px; /* Minimum width */
-    max-width: 300px; /* Maximum width */
+    min-width: 100px; 
+    max-width: 300px; 
     transition: width 0.3s ease;
 }
 
@@ -73,13 +73,13 @@ table {
     margin-top: 20px;
     border-collapse: collapse;
     font-size: 16px;
-    border: 2px solid black; /* Add black border for the table */
+    border: 2px solid black; 
 }
 
 th, td {
     padding: 10px;
     text-align: center;
-    border: 2px solid black; /* Add black borders for cells */
+    border: 2px solid black; 
 }
 
 th {
@@ -92,7 +92,7 @@ tr:nth-child(even) {
 }
 
 h1, label {
-    font-family: 'Comic Sans MS', cursive;
+    font-family: inherit; 
 }
 
 .instructions {
