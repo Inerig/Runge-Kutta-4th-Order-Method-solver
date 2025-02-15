@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 body {
-     font-family: 'Patrick Hand', cursive;
+    font-family: 'Patrick Hand', cursive;
     margin: 0;
     padding: 0;
     display: flex;
@@ -14,7 +14,7 @@ body {
     width: 80%;
     max-width: 600px;
     min-height: 100vh;
-   background-color: #d4e8d4; 
+    background-color: #d4e8d4; /* Light grayish green */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -41,13 +41,19 @@ body {
 }
 
 .input-container input {
+    width: 2ch; /* Starts small (fits 2 digits) */
+    min-width: 40px; /* Minimum width */
+    max-width: 300px; /* Maximum width */
     padding: 10px;
     margin-left: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #a0c4a0; /* Grayish green border */
     border-radius: 5px;
-    min-width: 100px; 
-    max-width: 300px; 
     transition: width 0.3s ease;
+}
+
+.input-container input:focus,
+.input-container input:not(:placeholder-shown) {
+    width: auto; /* Expands based on content */
 }
 
 .function-input {
@@ -57,7 +63,7 @@ body {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #6b8e68; /* Darker grayish green */
     color: white;
     border: none;
     border-radius: 5px;
@@ -65,7 +71,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #5a7c57; /* Slightly darker green */
 }
 
 table {
@@ -83,12 +89,12 @@ th, td {
 }
 
 th {
-    background-color: #007bff;
+    background-color: #6b8e68; /* Grayish green */
     color: white;
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #e0f0e0; /* Light grayish green */
 }
 
 h1, label {
@@ -99,35 +105,40 @@ h1, label {
     margin-top: 20px;
     font-size: 14px;
     line-height: 1.5;
+    color: #4d6b4d; /* Slightly darker green */
 }
 
 .example {
     margin-top: 10px;
     font-size: 14px;
     line-height: 1.5;
+    color: #4d6b4d;
 }
 
 .calculations {
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.5;
+    color: #4d6b4d;
 }
 
 .calculations h2 {
     font-size: 16px;
     margin-bottom: 10px;
+    color: #5a7c57; /* Darker green */
 }
 
 .calculations .step {
     margin-bottom: 20px;
     font-weight: bold;
+    color: #4d6b4d;
 }
 
 .calculations .step::before {
     content: "•";
     margin-right: 10px;
     font-size: 20px;
-    color: #007bff;
+    color: #6b8e68;
 }
 
 .calculations .formula {
