@@ -8,14 +8,14 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #f0f8ff;
-    color: black; /* Ensures all text is black */
+    color: black;
 }
 
 .container {
     width: 80%;
     max-width: 600px;
     min-height: 100vh;
-    background-color: #d4e8d4; /* Light grayish green */
+    background-color: #d4e8d4;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -24,89 +24,11 @@ body {
     align-items: center;
 }
 
-.form-group {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    margin-right: 10px;
-    width: 150px; 
-    text-align: right;
-    color: black; /* Ensure labels are black */
-}
-
-.input-container {
-    display: flex;
-    align-items: center;
-}
-
-.input-container input {
-    width: 2ch; /* Starts small (fits 2 digits) */
-    min-width: 40px; /* Minimum width */
-    max-width: 300px; /* Maximum width */
-    padding: 10px;
-    margin-left: 10px;
-    border: 1px solid #a0c4a0; /* Grayish green border */
-    border-radius: 5px;
-    transition: width 0.3s ease;
-    color: black; /* Ensures text inside inputs is black */
-}
-
-.input-container input:focus,
-.input-container input:not(:placeholder-shown) {
-    width: auto; /* Expands based on content */
-}
-
-.function-input {
-    order: 1;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #6b8e68; /* Darker grayish green */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #5a7c57; /* Slightly darker green */
-}
-
-table {
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
-    font-size: 16px;
-    border: 2px solid black; 
-}
-
-th, td {
-    padding: 10px;
-    text-align: center;
-    border: 2px solid black; 
-    color: black; /* Ensures table content is black */
-}
-
-th {
-    background-color: #6b8e68; /* Grayish green */
-    color: white;
-}
-
-tr:nth-child(even) {
-    background-color: #e0f0e0; /* Light grayish green */
-}
-
 h1, label {
-    font-family: inherit;
-    color: black; /* Ensures headings and labels are black */
+    font-family: 'Comic Neue', cursive;
+    color: black;
 }
 
-/* ----- CALCULATIONS SECTION FIX ----- */
 .calculations {
     width: 100%;
     padding: 15px;
@@ -115,29 +37,70 @@ h1, label {
     background: #d4e8d4;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Comic Neue', cursive;
 }
 
+/* Bold & Underlined Section Title */
 .calculations h2 {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
     text-decoration: underline;
+    font-family: 'Comic Neue', cursive;
 }
 
+/* Bold Step Markers */
 .calculations .step {
     font-weight: bold;
+    font-size: 17px;
     margin-top: 10px;
 }
 
 .calculations .step::before {
-    content: "▶ ";  /* Step marker */
+    content: "▶ ";
     font-size: 18px;
     color: #6b8e68;
     font-weight: bold;
 }
 
+/* Bold & Organized k-values (each on a separate line) */
+.calculations .k-values {
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.calculations .k-values div {
+    margin-top: 5px;
+}
+
+.calculations .k-values div::before {
+    content: "➤ ";
+    color: #6b8e68;
+    font-weight: bold;
+}
+
+/* Bold, Underlined Section Titles */
+.calculations .section-title {
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 15px;
+    text-decoration: underline;
+}
+
+/* Bold, Spaced Out Updates */
+.calculations .update {
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 15px;
+}
+
+/* Formula Styling */
 .calculations .formula {
-    font-family: 'Courier New', monospace;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
     background-color: #f8f8f8;
     padding: 5px;
     border-radius: 5px;
@@ -145,31 +108,11 @@ h1, label {
     margin-left: 15px;
 }
 
+/* Values Bold */
 .calculations .value {
     font-weight: bold;
     margin-left: 20px;
     display: block;
-}
-
-/* ----- Formatting for k-values ----- */
-.calculations .k-value {
-    margin-left: 15px;
-    font-weight: bold;
-}
-
-.calculations .k-value::before {
-    content: "➤ ";
-    color: #6b8e68;
-    font-weight: bold;
-}
-
-/* ----- Section titles (bold + underlined) ----- */
-.calculations .section-title {
-    font-weight: bold;
-    font-size: 17px;
-    margin-top: 15px;
-    text-decoration: underline;
-    color: black;
 }
 
 /* ----- Updates (Italic Formatting) ----- */
