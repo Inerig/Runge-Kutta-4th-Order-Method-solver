@@ -110,14 +110,61 @@ h1, label {
     color: black; /* Makes all text black */
 }
 
+.calculations {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.calculations h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.calculations .step {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
 .calculations .step::before {
-    content: "•";
-    margin-right: 10px;
+    content: "• ";
     font-size: 20px;
     color: #6b8e68;
 }
 
-.calculations .value.h {
+.calculations .formula {
+    font-family: 'Courier New', monospace;
+    margin-left: 15px;
+    display: block;
+}
+
+.calculations .value {
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.calculations .section-title {
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 15px;
+    text-decoration: underline;
+    color: black;
+}
+
+.calculations .sub-section {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.calculations .k-value::before {
+    content: "➤ ";
+    color: #6b8e68;
+    font-weight: bold;
+}
+
+.calculations .update {
     font-style: italic;
-    font-weight: normal;
+    margin-left: 15px;
 }
