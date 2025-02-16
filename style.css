@@ -12,48 +12,44 @@ body {
     color: black;
 }
 
-/* Container */
+
 .container {
     width: 90%;
-    max-width: 600px;
-    background-color: #e6f7ff;
+    max-width: 650px;
+    background-color: #d4e8d4;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Form Group */
+
 .form-group {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-direction: column;
     width: 100%;
     margin-bottom: 15px;
 }
 
 .form-group label {
-    width: 150px;
-    text-align: right;
     font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
 }
 
 .input-container {
     display: flex;
-    align-items: center;
-    flex-grow: 1;
+    width: 100%;
 }
 
 .input-container input {
+    flex: 1;
     padding: 10px;
-    margin-left: 10px;
     border: 2px solid #a0c4a0;
     border-radius: 5px;
-    min-width: 80px;
-    max-width: 100%;
-    transition: width 0.3s ease;
+    transition: all 0.3s ease;
     font-size: 16px;
 }
 
@@ -62,93 +58,81 @@ body {
     outline: none;
 }
 
-/* Decimal Places Input */
-.decimal-places-container {
-    margin-bottom: 15px;
-}
 
-#decimalPlaces {
-    width: 60px;
-    text-align: center;
-    font-size: 16px;
-}
-
-/* Button */
 button {
     width: 100%;
     padding: 12px;
-    background-color: #007bff;
+    background-color: #6b8e68;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
+    transition: background 0.3s;
 }
 
 button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+    background-color: #5a7c57;
 }
 
-/* Table */
+
 table {
     width: 100%;
     margin-top: 20px;
     border-collapse: collapse;
     font-size: 16px;
-    border: 2px solid black;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 th, td {
     padding: 10px;
     text-align: center;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 th {
-    background-color: #007bff;
+    background-color: #6b8e68;
     color: white;
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #e0f0e0;
 }
 
 tr:hover {
-    background-color: #d6eaff;
+    background-color: #c2d6c2;
 }
 
-/* Calculations Section */
+
 .calculations {
     width: 100%;
     padding: 15px;
-    font-size: 14px;
-    line-height: 1.5;
-    background: #e6f7ff;
+    font-size: 16px;
+    line-height: 1.6;
+    background: #d4e8d4;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Steps */
+
 .calculations .step {
     font-weight: bold;
-    font-size: 15px;
-    margin-bottom: 20px;
+    font-size: 17px;
+    margin-top: 10px;
 }
 
 .calculations .step::before {
-    content: "▶";
-    margin-right: 10px;
-    font-size: 18px;
-    color: #007bff;
+    content: "▶ ";
+    color: #6b8e68;
+    font-weight: bold;
 }
 
-/* k-values */
+
 .calculations .k-values {
     margin-left: 15px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
 }
@@ -158,13 +142,12 @@ tr:hover {
 }
 
 .calculations .k-values div::before {
-    content: "➤";
-    color: #007bff;
+    content: "➤ ";
+    color: #6b8e68;
     font-weight: bold;
-    margin-right: 5px;
 }
 
-/* Formula */
+
 .calculations .formula {
     font-family: 'Comic Neue', cursive;
     font-weight: bold;
@@ -172,36 +155,24 @@ tr:hover {
     padding: 5px;
     border-radius: 5px;
     display: inline-block;
-    margin-bottom: 5px;
+    margin-left: 15px;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 600px) {
+
+@media (max-width: 500px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
     .form-group {
-        flex-direction: column;
         align-items: flex-start;
     }
 
-    .form-group label {
-        width: 100%;
-        text-align: left;
-        margin-bottom: 5px;
-    }
-
-    .input-container input {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .decimal-places-container {
-        width: 100%;
-    }
-
     button {
-        font-size: 16px;
+        font-size: 14px;
     }
-}
-
+} 
     button {
         font-size: 14px;
     }
