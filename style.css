@@ -45,17 +45,19 @@ body {
 
 .input-container input {
     flex-grow: 1;
-    padding: 10px;
-    border: 1px solid #a0c4a0;
-    border-radius: 6px;
-    min-width: 120px;
+    padding: 12px;
+    border: 2px solid #a0c4a0;
+    border-radius: 8px;
+    min-width: 140px;
     max-width: 100%;
     transition: all 0.3s ease;
+    font-size: 16px;
+    background: #ffffff;
 }
 
 .input-container input:focus {
     border-color: #6b8e68;
-    box-shadow: 0 0 8px rgba(107, 142, 104, 0.6);
+    box-shadow: 0 0 10px rgba(107, 142, 104, 0.6);
     outline: none;
 }
 
@@ -65,7 +67,7 @@ button {
     background-color: #6b8e68;
     color: white;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
     transition: background 0.3s ease, transform 0.2s ease;
@@ -89,7 +91,7 @@ table {
 }
 
 th, td {
-    padding: 10px;
+    padding: 12px;
     text-align: center;
     border: 2px solid #ccc;
 }
@@ -138,9 +140,9 @@ h1, label, .formula {
 .calculations .step {
     margin-bottom: 15px;
     font-weight: bold;
-    padding: 8px;
+    padding: 10px;
     background: #ffffff;
-    border-radius: 6px;
+    border-radius: 8px;
 }
 
 .calculations .step::before {
@@ -171,3 +173,4 @@ h1, label, .formula {
         font-size: 14px;
     }
 }
+
