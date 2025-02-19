@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400&display=swap');
 
+:root {
+    --main-green: #B8DFD8;
+    --accent-green: #7CBDAF;
+    --dark-green: #4B8C7A;
+    --background: #F1F8E9;
+    --container-bg: #E8F5E9;
+}
+
 body {
     font-family: 'Comic Neue', cursive;
     margin: 0;
@@ -7,14 +15,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e8f0fe; /* Light blue like Predictor-Corrector */
+    background-color: var(--background);
     min-height: 100vh;
 }
 
 .container {
     width: 90%;
     max-width: 650px;
-    background-color: #f8f9fd; /* Lightened background */
+    background-color: var(--container-bg);
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -36,6 +44,7 @@ body {
     text-align: right;
     font-weight: bold;
     color: #333;
+    margin-right: 15px;
 }
 
 .input-container {
@@ -46,23 +55,24 @@ body {
 .input-container input {
     flex-grow: 1;
     padding: 10px;
-    border: 1px solid #a0c4a0;
+    border: 1px solid var(--main-green);
     border-radius: 6px;
     min-width: 120px;
     max-width: 100%;
     transition: all 0.3s ease;
+    font-size: 16px;
 }
 
 .input-container input:focus {
-    border-color: #6b8e68;
-    box-shadow: 0 0 8px rgba(107, 142, 104, 0.6);
+    border-color: var(--accent-green);
+    box-shadow: 0 0 8px rgba(124, 189, 175, 0.4);
     outline: none;
 }
 
 button {
     width: 100%;
     padding: 12px;
-    background-color: #d8b3c5; /* Soft purple like Predictor-Corrector */
+    background-color: var(--accent-green);
     color: white;
     border: none;
     border-radius: 6px;
@@ -72,12 +82,12 @@ button {
 }
 
 button:hover {
-    background-color: #c495a5;
+    background-color: var(--dark-green);
     transform: scale(1.05);
 }
 
 button:active {
-    background-color: #b07d90;
+    background-color: #3A6B5A;
 }
 
 table {
@@ -95,81 +105,35 @@ th, td {
 }
 
 th {
-    background-color: #cce0ff; /* Light blue like Predictor-Corrector */
-    color: black;
+    background-color: var(--accent-green);
+    color: white;
 }
 
 tr:nth-child(even) {
-    background-color: #e8f0fe; /* Match Predictor-Corrector */
-}
-
-h1 {
-    font-family: 'Comic Neue', cursive;
-    text-align: center;
-    color: black;
-}
-
-.instructions, .example {
-    margin-top: 20px;
-    font-size: 14px;
-    line-height: 1.6;
-    padding: 12px;
-    background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    background-color: #F0F9F7;
 }
 
 .calculations {
     width: 100%;
     margin-top: 20px;
-    font-size: 14px;
-    line-height: 1.5;
     padding: 15px;
-    background: #f8f9fd;
+    background: var(--container-bg);
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.calculations h2 {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-decoration: underline;
-}
-
 .calculations .step {
     margin-bottom: 15px;
-    font-weight: bold;
-    padding: 8px;
-    background: #ffffff;
+    padding: 10px;
+    background: white;
     border-radius: 6px;
 }
 
-.calculations .step::before {
-    content: "▶";
-    margin-right: 8px;
-    font-size: 18px;
-    color: #6b8e68;
-}
-
-@media screen and (max-width: 600px) {
-    .form-group {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
+@media (max-width: 600px) {
     .form-group label {
         width: 100%;
         text-align: left;
         margin-bottom: 5px;
-    }
-
-    .input-container input {
-        width: 100%;
-    }
-
-    button {
-        font-size: 14px;
     }
 }
 
